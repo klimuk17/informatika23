@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimuk Viktoryia:Formulár</title>
+</head>
+<body>
+    <FORM ACTION="formulare.php" METHOD="get"></FORM>
+    <style type="text/css">
+        table {
+         background: pink;
+        }
+       </style>
+<table border="1" cellpadding="5" cellspacing="0" width="70%" align="center">
+<tr>
+    <td>Meno</td>
+    <td><input name="meno" ></td>
+    <td>Heslo</td>
+    <td><input name="heslo"></td>
+</tr>
+<tr>
+    <td>Odbor</td>
+    <td><INPUT TYPE="radio" name="ako"> TIS
+        <INPUT TYPE="radio" name="ako">ELE</td>
+    <td> Trieda</td>
+    <td> <select name="zelovoc">
+        <optgroup label="Prvý ročník">
+          <option>1.A</option>
+          <option>1.B</option>
+          <option>1.C</option>
+          <option>1.D</option>
+        </optgroup>
+        <optgroup label="Druhýročník">
+          <option>2.A</option>
+          <option>2.B</option>
+          <option>2.C</option>
+          <option>2.D</option>
+        </optgroup>  
+      </select>      </td>
+</tr>
+<tr>
+    <td>Predmety</td>
+    <td colspan="4"><INPUT TYPE="checkbox"> INS  
+        <INPUT TYPE="checkbox"> CVM
+            <INPUT TYPE="checkbox"> CUJ
+                <INPUT TYPE="checkbox"> PRA
+    </td>
+</tr>
+<tr>
+    <td>Pripomienky</td>
+    <td colspan="4"><TEXTAREA ROWS="10" COLS="32" NAME="komentar">
+        chcem viac voliteIných predmetov
+        </TEXTAREA></td>
+</tr>
+<tr>
+    <td colspan="2"><INPUT TYPE="submit" VALUE="Vymazať">  </td>
+    <td colspan="4"><INPUT TYPE="submit" VALUE="Odoslať"></td>
+</tr>
+</table>
+</body>
+</html>
