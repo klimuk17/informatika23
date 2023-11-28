@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimuk Viktoryia:Formulár</title>
+</head>
+<body>
+<h1 align="center"> Priezvisko Meno: Konkurz na pracovné miesto v leteckom podniku</h1>
+    <FORM ACTION="formulare.php" METHOD="get"></FORM>
+    <style type="text/css">
+        table {
+         background:PaleTurquoise;
+        }
+       </style>
+<table border="1" cellpadding="5" cellspacing="0" width="70%" align="center" bordercolor="blue">
+<tr>
+    <td>Meno:</td>
+    <td><input name="meno" placeholder="Meno" ></td>
+    <td>Priezvisko:</td>
+    <td><input name="priezvisko" placeholder="Priezvisko"></td>
+</tr>
+<tr>
+    <td><label> Dátum narodenia:</label></td><td><input type="date" name="datum" required=""></td>
+    <td>Vzdelanie:</td>
+    <td><select name="tema" style="width: 150px;">
+        <option>Základné vzdelanie</option>
+        <option>Stredoškolské vzdelanie</option>
+        <option>Stredoškolské vzdelanie s maturitou</option>
+        <option>Vysokoškolské vzdelanie I. stupňa</option>
+        <option>Vysokoškolské vzdelanie II. stupňa</option>
+        <option>Vysokoškolské vzdelanie III. stupňa</option>
+    </select>
+</td>
+</tr>
+<tr>
+    <td >Mám záujem o:</td>
+    <td><select name="tema" style="width: 150px;">
+        <option>Pilot</option>
+        <option>Letuška</option>
+        <option>Ochrana letiska</option>
+        <option>Riadiaci letovej prevádzky</option>
+        <option>Letecký mechanik</option>
+        <td>Požadujem&nbsp;ubytovanie:</td><td>
+            <label><input type="radio" name="ubytovanie" value="áno"> Ano</label>
+            <label><input type="radio" name="ubytovanie" value="nie" checked> Nie</label>
+            </td>
+    </select>
+
+</tr>
+<tr>
+    <td>Vodičský preukaz B:</td>
+    <td><INPUT TYPE="radio" name="ako"> Ano
+        <INPUT TYPE="radio" name="ako">Nie</td>
+    <td> Počet rokov praxe: </td>
+    <td> <select name="zelovoc">
+          <option>1-2</option>
+          <option>3-5</option>
+          <option>5-7</option>
+          <option>7 a viac</option>
+      </select>      </td>
+</tr>
+<tr>
+    <td> Jazyky:</td>
+   <td colspan="4"> <select name="tema">
+    <optgroup label=" Anglický jazyk">
+    <option> Anglický jazyk B1</option>
+    <option> Anglický jazyk B2</option>
+    <option> Anglický jazyk C1</option>
+</optgroup>
+</select>
+   
+ <select name="tema" >
+<optgroup label=" Slovenský jazyk">
+    <option> Slovenský jazyk B1</option>
+    <option> Slovenský jazyk B2</option>
+    <option> Slovenský jazyk C1</option>
+</optgroup>
+   </select>
+   <select name="tema">
+    <optgroup label=" Španielsky jazyk">
+        <option> Španielsky jazyk B1</option>
+        <option> Španielsky jazyk B2</option>
+        <option> Španielsky jazyk C1</option>
+    </optgroup>
+       </select>
+       </td>
+   
+</tr>
+    
+<tr>
+    <td>Pracovné skúsenosti</td>
+<td ><TEXTAREA ROWS="10" COLS="32" NAME="komentar">
+    </TEXTAREA></td>
+    <td>Záujmy</td>
+    <td ><TEXTAREA ROWS="10" COLS="32" NAME="komentar">
+        </TEXTAREA></td>
+</tr>
+<tr>
+    <td colspan="2" ><INPUT TYPE="submit" VALUE="Vymazať" style="background-color: Orchid">  </td>
+    <td colspan="4"><INPUT TYPE="submit" VALUE="Odoslať" style="background-color: MediumPurple"></td>
+</tr>
+</table>
+</body>
+</html>
